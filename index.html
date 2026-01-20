@@ -9,13 +9,24 @@
 
   <h1>🎮 Licra Games Bank</h1>
 
-  <div class="bank">
+  <!-- LOGIN -->
+  <div class="login" id="loginBox">
+    <p>Enter your username:</p>
+    <input type="text" id="usernameInput" placeholder="Your name">
+    <br><br>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- BANK -->
+  <div class="bank" id="bankBox" style="display:none;">
     <p>User: <span id="username"></span></p>
     <p>Balance: <span id="balance"></span> Licra K$</p>
     <p>Value: <span id="value"></span></p>
 
     <button onclick="earnLicra(10)">+ Earn 10</button>
     <button onclick="spendLicra(5)">- Spend 5</button>
+    <br><br>
+    <button onclick="logout()">Logout</button>
   </div>
 
   <script src="script.js"></script>
